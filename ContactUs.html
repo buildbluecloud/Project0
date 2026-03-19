@@ -1,1 +1,256 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Customer Request Form</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+    }
+
+    /* Top Navigation */
+    .navbar {
+        background: linear-gradient(90deg, #1f5fa5, #2f7edb);
+        color: #fff;
+        padding: 14px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c") center/cover no-repeat;
+        padding: 70px 40px;
+        color: white;
+    }
+
+    .hero h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .hero p {
+        margin-top: 10px;
+        font-size: 16px;
+        opacity: 0.9;
+    }
+
+    /* Main Container */
+    .container {
+        max-width: 1100px;
+        margin: -40px auto 60px;
+        background: white;
+        padding: 40px;
+        border-radius: 6px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+        color: #1f5fa5;
+        border-bottom: 2px solid #e1e7f0;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Form */
+    .form-row {
+        display: flex;
+        margin-bottom: 18px;
+        align-items: center;
+    }
+
+    .form-row label {
+        width: 180px;
+        font-weight: 600;
+        color: #1f3f75;
+    }
+
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        flex: 1;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #cfd6e4;
+        font-size: 14px;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .submit-btn {
+        margin-left: 180px;
+        background: linear-gradient(180deg, #2f7edb, #1f5fa5);
+        border: none;
+        color: white;
+        padding: 12px 26px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        opacity: 0.95;
+    }
+
+    /* Success Message */
+    .success {
+        margin-top: 25px;
+        background: #eef7ed;
+        border: 1px solid #cfe6cc;
+        padding: 14px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    /* Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    table th {
+        background: #f1f4f9;
+        text-align: left;
+        padding: 12px;
+        border-bottom: 2px solid #d6deec;
+    }
+
+    table td {
+        padding: 12px;
+        border-bottom: 1px solid #e1e7f0;
+        font-size: 14px;
+    }
+
+    table a {
+        color: #1f5fa5;
+        text-decoration: none;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        font-size: 13px;
+        color: #777;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <div><strong>Customer Request Form</strong></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- Hero -->
+<div class="hero">
+    <h1>Submit Your Request</h1>
+    <p>Please fill out the form below and we will get back to you shortly.</p>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <h2>Request Information</h2>
+    <p>Please enter your details and request below.</p>
+
+    <div class="form-row">
+        <label>Full Name:</label>
+        <input type="text" />
+    </div>
+
+    <div class="form-row">
+        <label>Email Address:</label>
+        <input type="email" placeholder="example@example.com" />
+    </div>
+
+    <div class="form-row">
+        <label>Phone Number:</label>
+        <input type="text" placeholder="Optional" />
+    </div>
+
+    <div class="form-row">
+        <label>Request Type:</label>
+        <select>
+            <option>Select Request Type</option>
+            <option>Technical Support</option>
+            <option>Product Inquiry</option>
+            <option>Billing Question</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label>Message:</label>
+        <textarea placeholder="Enter your message here..."></textarea>
+    </div>
+
+    <button class="submit-btn">Submit Request</button>
+
+    <div class="success">
+        Thank you! Your request has been received and stored in our database.
+    </div>
+
+    <h2 style="margin-top:40px;">Database Records</h2>
+    <p><strong>Recent Customer Requests:</strong></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Request Type</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><strong>John Doe</strong></td>
+                <td><a href="#">john@example.com</a></td>
+                <td>Technical Support</td>
+                <td>Need assistance with my computer.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><strong>Jane Smith</strong></td>
+                <td><a href="#">jane@example.com</a></td>
+                <td>Product Inquiry</td>
+                <td>Looking for information about your services.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        © 2024 Customer Request System. All Rights Reserved.
+    </footer>
+
+</div>
+
+</body>
+</html>

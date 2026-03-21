@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname)));
 
-mongoose.connect('mongodb+srv://mervindanao_db_user:Password@cluster0.vpcstmw.mongodb.net/signupDB?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://mervindanao_user:Password@cluster0.vpcstmw.mongodb.net/signupDB?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

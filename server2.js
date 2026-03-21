@@ -27,8 +27,8 @@ const User = mongoose.model('User', userSchema);
 const transporter = nodemailer.createTransport({
   service: 'hotmail',
   auth: {
-    user: 'buildblue.cloud@hotmail.com',
-    pass: 'Letmein1234!'
+    user: 'buildblue@hotmail.com',
+    pass: 'Password'
   }
 });
 

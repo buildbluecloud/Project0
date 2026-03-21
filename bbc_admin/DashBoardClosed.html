@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpdesk - Closed Tickets</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      height: 100vh;
+      padding: 20px 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #34495e;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    table th {
+      background: #f4f4f4;
+    }
+    .pagination {
+      margin-top: 10px;
+    }
+    .pagination button {
+      padding: 6px 12px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <ul>
+      <li>Dashboard</li>
+      <li>Open</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Pending</li>
+      <li>Unassigned</li>
+      <li>My tickets</li>
+      <li>Teams</li>
+      <li>Users</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="error">
+      Notice: Trying to get property 'name' of non-object in /var/www/html/helpdesk-core-php/closed.php on line 48
+    </div>
+    <h2>Closed Tickets</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Requester</th>
+          <th>Team</th>
+          <th>Agent</th>
+          <th>Status</th>
+          <th>Created At</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>demo subject</td>
+          <td>demo ticket</td>
+          <td>Devops</td>
+          <td></td>
+          <td>closed</td>
+          <td>20-03-2023 12:27:25</td>
+          <td>
+            <select>
+              <option>Action</option>
+              <option>View</option>
+              <option>Reopen</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>subject</td>
+          <td>mofiqul</td>
+          <td>Devops</td>
+          <td>injamul</td>
+          <td>closed</td>
+          <td>19-05-2019 19:18:31</td>
+          <td>
+            <select>
+              <option>Action</option>
+              <option>View</option>
+              <option>Reopen</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <span>Showing 1 to 2 of 2 entries</span>
+      <button>Previous</button>
+      <button>Next</button>
+    </div>
+  </div>
+</body>
+</html>

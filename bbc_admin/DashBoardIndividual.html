@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpdesk Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      padding-top: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #34495e;
+    }
+    .main {
+      margin-left: 240px;
+      padding: 20px;
+    }
+    .main h1 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    .status-open {
+      color: green;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Helpdesk</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Open</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Pending</li>
+      <li>Unassigned</li>
+      <li>My tickets</li>
+      <li>Teams</li>
+      <li>Users</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>Dashboard / Overview</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Requester</th>
+          <th>Team</th>
+          <th>Agent</th>
+          <th>Status</th>
+          <th>Created At</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>abcd</td>
+          <td>test123</td>
+          <td>Server</td>
+          <td>Alex</td>
+          <td class="status-open">open</td>
+          <td>07-06-2019 12:21:33</td>
+          <td><button>Action</button></td>
+        </tr>
+        <tr>
+          <td>abcd</td>
+          <td>test</td>
+          <td>injamul</td>
+          <td>Alex</td>
+          <td class="status-open">open</td>
+          <td>07-06-2019 07:37:43</td>
+          <td><button>Action</button></td>
+        </tr>
+        <tr>
+          <td>no subject</td>
+          <td>test ticket</td>
+          <td>Server</td>
+          <td>Alex</td>
+          <td class="status-open">open</td>
+          <td>07-06-2019 12:22:04</td>
+          <td><button>Action</button></td>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>injamul</td>
+          <td>Devops</td>
+          <td>Alex</td>
+          <td class="status-open">open</td>
+          <td>23-05-2019 22:48:25</td>
+          <td><button>Action</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      Showing 1 to 4 of 4 entries<br>
+      Copyright © Your Website 2019
+    </div>
+  </div>
+</body>
+</html>

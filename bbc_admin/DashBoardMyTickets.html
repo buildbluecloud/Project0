@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpdesk Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      padding-top: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #34495e;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+    }
+    table th, table td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .status {
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 0.9em;
+    }
+    .solved {
+      background: #27ae60;
+    }
+    .pending {
+      background: #f39c12;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.85em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Open</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Pending</li>
+      <li>Unassigned</li>
+      <li>My tickets</li>
+      <li>Teams</li>
+      <li>Users</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>My Tickets</h1>
+      <p>Logged in as <strong>John Doe</strong></p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Requester</th>
+          <th>Team</th>
+          <th>Agent</th>
+          <th>Requested</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>subject</td>
+          <td>mofiqul</td>
+          <td>Devops</td>
+          <td><span class="status solved">Solved</span></td>
+          <td>19-05-2019 19:18:37</td>
+          <td><button>⋮</button></td>
+        </tr>
+        <tr>
+          <td>test</td>
+          <td>injamul</td>
+          <td>Server</td>
+          <td><span class="status pending">Pending</span></td>
+          <td>30-05-2019 19:25:17</td>
+          <td><button>⋮</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      Copyright © Your Website 2019
+    </div>
+  </div>
+</body>
+</html>

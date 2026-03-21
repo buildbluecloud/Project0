@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpdesk Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      padding-top: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #34495e;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      background: #ecf0f1;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    table th {
+      background: #f9f9f9;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Helpdesk</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Open</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Pending</li>
+      <li>Unassigned</li>
+      <li>My tickets</li>
+      <li>Teams</li>
+      <li>Users</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      Logged in: John Doe
+    </div>
+
+    <h1>Dashboard / Overview</h1>
+    <div>
+      Show 
+      <select>
+        <option>10</option>
+        <option>25</option>
+        <option>50</option>
+      </select> 
+      entries
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Requester</th>
+          <th>Team</th>
+          <th>Agent</th>
+          <th>Status</th>
+          <th>Created At</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="7" style="text-align:center;">No data available in table</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      Copyright © Your Website 2019
+    </div>
+  </div>
+</body>
+</html>

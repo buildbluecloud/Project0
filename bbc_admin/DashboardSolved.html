@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Helpdesk Ticket System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      height: 100vh;
+      padding: 20px 0;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+    }
+    .sidebar ul li:hover {
+      background: #34495e;
+    }
+    .main {
+      flex: 1;
+      background: #ecf0f1;
+      padding: 20px;
+    }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    .ticket-details {
+      background: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .ticket-details h3 {
+      margin-top: 0;
+    }
+    .form-group {
+      margin: 15px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #3498db;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Helpdesk</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Open</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Pending</li>
+      <li>Unassigned</li>
+      <li>My tickets</li>
+      <li>Teams</li>
+      <li>Users</li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <span>Dashboard / Ticket details</span>
+      <span>John Doe</span>
+    </div>
+    <div class="ticket-details">
+      <h3>Solved subject 19-05-2019 18:18:37</h3>
+      <p><strong>Team:</strong> Devops</p>
+      <div class="form-group">
+        <label for="assign">Assigned</label>
+        <select id="assign">
+          <option>--select--</option>
+          <option>Person A</option>
+          <option>Person B</option>
+        </select>
+        <button>Assign</button>
+      </div>
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea id="comment" rows="3"></textarea>
+        <button>Comment</button>
+      </div>
+      <div class="form-group">
+        <label for="status">Change Ticket Status</label>
+        <select id="status">
+          <option>--select--</option>
+          <option>Open</option>
+          <option>Solved</option>
+          <option>Closed</option>
+          <option>Pending</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
